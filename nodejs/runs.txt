@@ -1,0 +1,10 @@
+time node --max-old-space-size=8192 sequential.js > measurements-out.txt
+real	9m0.602s
+user	8m58.470s
+sys	0m54.430s
+
+# 12 threads 128M Buffer (uses lots of RAM)
+time node --max-old-space-size=8192 threads.js > measurements-threads-out.txt
+real    1m40.250s
+user    15m2.256s
+sys     1m46.805s
